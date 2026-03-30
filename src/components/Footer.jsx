@@ -58,7 +58,7 @@ const Footer = () => (
               <li>Glocal Design</li>
               <li className="leading-relaxed">B-73, Head Field Solutions,<br />Sector-57, Noida</li>
               <li>+91 8860870874</li>
-              <li className="pt-1">Info@Glocaldesign.Com</li>
+              <li className="pt-1">info@glocaldesign.in</li>
             </ul>
           </div>
 

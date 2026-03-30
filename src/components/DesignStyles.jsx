@@ -205,7 +205,7 @@ const DesignStyles = () => {
                 {style.desc}
               </p>
 
-              <div style={{
+              {/* <div style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.5rem',
@@ -220,7 +220,7 @@ const DesignStyles = () => {
               }}>
                 Explore Style
                 <span style={{ fontSize: '1rem', lineHeight: 1 }}>→</span>
-              </div>
+              </div> */}
             </div>
           </div>
         );
