@@ -238,6 +238,102 @@ const HeroDesktopSection = () => {
           ))}
         </div>
 
+        {/* Chair — decorative image next to title - Desktop only */}
+        {!isTablet && (
+          <img
+            src="/images/chair.png"
+            alt=""
+            loading="lazy"
+            onMouseEnter={e => {
+              e.currentTarget.style.opacity = '0.4';
+              e.currentTarget.style.filter = 'drop-shadow(0 0 28px rgba(178,120,60,0.65))';
+              e.currentTarget.style.transform = 'scale(1.06)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.opacity = '0.18';
+              e.currentTarget.style.filter = 'drop-shadow(0 8px 20px rgba(0,0,0,0.08))';
+              e.currentTarget.style.transform = 'scale(1)';
+            }}
+            style={{
+              position: 'absolute',
+              top: '18%',
+              right: isTablet ? '1%' : '3%',
+              width: '22%',
+              height: 'auto',
+              objectFit: 'contain',
+              opacity: 0.18,
+              zIndex: 3,
+              userSelect: 'none',
+              filter: 'drop-shadow(0 8px 20px rgba(0,0,0,0.08))',
+              transition: 'opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease',
+            }}
+          />
+        )}
+
+        {/* Glass Bubble — decorative BG image (middle-left) - Desktop only */}
+        {/* {!isTablet && (
+          <img
+            src="/images/glassbubble.png"
+            alt=""
+            loading="lazy"
+            onMouseEnter={e => {
+              e.currentTarget.style.opacity = '0.35';
+              e.currentTarget.style.filter = 'drop-shadow(0 0 28px rgba(178,120,60,0.65))';
+              e.currentTarget.style.transform = 'scale(1.04)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.opacity = '0.12';
+              e.currentTarget.style.filter = 'drop-shadow(0 8px 20px rgba(0,0,0,0.08))';
+              e.currentTarget.style.transform = 'none';
+            }}
+            style={{
+              position: 'absolute',
+              top: '35%',
+              left: '-5%',
+              width: '32%',
+              height: 'auto',
+              objectFit: 'contain',
+              opacity: 0.12,
+              zIndex: 1,
+              userSelect: 'none',
+              filter: 'drop-shadow(0 8px 20px rgba(0,0,0,0.08))',
+              transition: 'opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease',
+            }}
+          />
+        )} */}
+
+        {/* Table — decorative BG image (bottom-left) - Desktop only */}
+        {!isTablet && (
+          <img
+            src="/images/table.png"
+            alt=""
+            loading="lazy"
+            onMouseEnter={e => {
+              e.currentTarget.style.opacity = '0.45';
+              e.currentTarget.style.filter = 'drop-shadow(0 0 28px rgba(178,120,60,0.65))';
+              e.currentTarget.style.transform = 'scale(1.04)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.opacity = '0.24';
+              e.currentTarget.style.filter = 'drop-shadow(0 8px 20px rgba(0,0,0,0.08))';
+              e.currentTarget.style.transform = 'none';
+            }}
+            style={{
+              position: 'absolute',
+              bottom: '-2%',
+              left: '-12%',
+              width: '40%',
+              height: 'auto',
+              objectFit: 'contain',
+              opacity: 0.24,
+              zIndex: 1,
+              userSelect: 'none',
+              filter: 'drop-shadow(0 8px 20px rgba(0,0,0,0.08))',
+              transition: 'opacity 0.4s ease, filter 0.4s ease, transform 0.4s ease',
+            }}
+          />
+        )}
+
         {/* Sofa — decorative BG image */}
         <img
           src="/images/sofa.png"
@@ -249,7 +345,7 @@ const HeroDesktopSection = () => {
             e.currentTarget.style.transform = 'scale(1.04)';
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.opacity = '0.18';
+            e.currentTarget.style.opacity = '0.24';
             e.currentTarget.style.filter  = 'drop-shadow(0 8px 20px rgba(0,0,0,0.08))';
             e.currentTarget.style.transform = 'none';
           }}
@@ -260,7 +356,7 @@ const HeroDesktopSection = () => {
             width: '58%',
             height: 'auto',
             objectFit: 'contain',
-            opacity: 0.18,
+            opacity: 0.24,
             zIndex: 1,
             userSelect: 'none',
             filter: 'drop-shadow(0 8px 20px rgba(0,0,0,0.08))',

@@ -6,7 +6,9 @@
 import React from 'react';
 
 const IMAGEKIT_URL = import.meta.env.VITE_IMAGEKIT_URL || '';
-const VIDEO_SRC    = IMAGEKIT_URL ? `${IMAGEKIT_URL}/hero.mp4` : '/hero.mp4';
+// const VIDEO_SRC    = IMAGEKIT_URL ? `${IMAGEKIT_URL}/hero.mp4` : '/hero.mp4';
+const CB = '?v=20260331b'; // cache-buster — update this string when you replace the video
+const VIDEO_SRC = IMAGEKIT_URL ? `${IMAGEKIT_URL}/hero.mp4${CB}` : '/hero.mp4';
 
 const AutoplayVideoSection = () => (
   <section
