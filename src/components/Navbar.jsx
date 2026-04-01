@@ -221,7 +221,7 @@ const Navbar = () => {
         {/* Logo */}
         <a href="/" style={{ pointerEvents: 'auto', lineHeight: 0 }}>
           <img
-            src="/images/logo.png"
+            src="./images/logo.png"
             alt="Glocal Design"
             width={isMobile ? 80 : 110}
             height={isMobile ? 26 : 38}

@@ -13,16 +13,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 // ── Constants outside component ──
 const PROJECTS = [
-  { id: 1,  title: "Bachelor's Pad",             location: 'Mumbai',        image: '/projectcarousel/mumbai.webp'                      },
-  { id: 2,  title: 'Builder Apartment',           location: 'Gurugram',      image: '/projectcarousel/gurugram.webp'                    },
-  { id: 3,  title: 'Classical House',             location: 'Anand Niketan', image: '/projectcarousel/classical.webp'                   },
-  { id: 4,  title: 'Jaipur Retreat',              location: 'Jaipur',        image: '/projectcarousel/JAIPUR RETREAT.webp'              },
-  { id: 5,  title: 'Kaveri House',                location: 'Chennai',       image: '/projectcarousel/chennai.webp'                     },
-  { id: 6,  title: 'Krishna Niwas',               location: 'Chhatarpur',    image: '/projectcarousel/KRISHNA NIWAS, CHATTARPUR.webp'   },
-  { id: 7,  title: 'Lake House',                  location: 'Kochi',         image: '/projectcarousel/lake.webp'                        },
-  { id: 8,  title: 'Modern House',                location: 'Lucknow',       image: '/projectcarousel/modernhouse.webp'                 },
-  { id: 9,  title: 'Modern Luxury Residence',     location: 'Vasant Vihar',  image: '/projectcarousel/modernluxury.webp'                },
-  { id: 10, title: 'Scandinavian Holiday Home',   location: 'Gurugram',      image: '/projectcarousel/holidayhome.webp'                 },
+  { id: 1,  title: "Bachelor's Pad",             location: 'Mumbai',        image: './projectcarousel/mumbai.webp'                      },
+  { id: 2,  title: 'Builder Apartment',           location: 'Gurugram',      image: './projectcarousel/gurugram.webp'                    },
+  { id: 3,  title: 'Classical House',             location: 'Anand Niketan', image: './projectcarousel/classical.webp'                   },
+  { id: 4,  title: 'Jaipur Retreat',              location: 'Jaipur',        image: './projectcarousel/JAIPUR RETREAT.webp'              },
+  { id: 5,  title: 'Kaveri House',                location: 'Chennai',       image: './projectcarousel/chennai.webp'                     },
+  { id: 6,  title: 'Krishna Niwas',               location: 'Chhatarpur',    image: './projectcarousel/KRISHNA NIWAS, CHATTARPUR.webp'   },
+  { id: 7,  title: 'Lake House',                  location: 'Kochi',         image: './projectcarousel/lake.webp'                        },
+  { id: 8,  title: 'Modern House',                location: 'Lucknow',       image: './projectcarousel/modernhouse.webp'                 },
+  { id: 9,  title: 'Modern Luxury Residence',     location: 'Vasant Vihar',  image: './projectcarousel/modernluxury.webp'                },
+  { id: 10, title: 'Scandinavian Holiday Home',   location: 'Gurugram',      image: './projectcarousel/holidayhome.webp'                 },
 ];
 
 const CARD_W   = 280;

@@ -8,19 +8,19 @@ import React, { useState, useEffect } from 'react';
 
 // ── Constants outside component ──
 const STYLES = [
-  { name: 'Mid Century Modern', image: '/design/midcentury.webp',       desc: 'Clean lines, organic curves'        },
-  { name: 'Industrial',         image: '/design/Industrial.webp',       desc: 'Raw materials, open spaces'         },
-  { name: 'Bohemian',           image: '/design/bohimian.webp',         desc: 'Eclectic, artistic, free-spirited'  },
-  { name: 'Rustic',             image: '/design/Rustic.webp',           desc: 'Natural wood, warm tones'           },
-  { name: 'Coastal',            image: '/design/coastal.webp',          desc: 'Breezy, light & ocean-inspired'     },
-  { name: 'Electic',            image: '/design/electic.webp',          desc: 'Bold mix of styles & eras'          },
-  { name: 'Transitional',       image: '/design/transitional.webp',     desc: 'Classic meets contemporary'         },
-  { name: 'Art Deco',           image: '/design/artdeco.webp',          desc: 'Glamour, geometry & gold'           },
-  { name: 'Hollywood Regency',  image: '/design/HollywoodRegency.webp', desc: 'Opulent, dramatic luxury'           },
-  { name: 'Japandi',            image: '/design/Japandi.webp',          desc: 'Japanese-Scandi minimalism'         },
-  { name: 'Maximalist',         image: '/design/Maximalist.webp',       desc: 'More is more — bold & layered'      },
-  { name: 'Mediterranean',      image: '/design/Meditarrarian.webp',    desc: 'Warm terracotta & relaxed luxury'   },
-  { name: 'Traditional',        image: '/design/Traditional.webp',      desc: 'Timeless elegance & symmetry'       },
+  { name: 'Mid Century Modern', image: './design/midcentury.webp',       desc: 'Clean lines, organic curves'        },
+  { name: 'Industrial',         image: './design/Industrial.webp',       desc: 'Raw materials, open spaces'         },
+  { name: 'Bohemian',           image: './design/bohimian.webp',         desc: 'Eclectic, artistic, free-spirited'  },
+  { name: 'Rustic',             image: './design/Rustic.webp',           desc: 'Natural wood, warm tones'           },
+  { name: 'Coastal',            image: './design/coastal.webp',          desc: 'Breezy, light & ocean-inspired'     },
+  { name: 'Electic',            image: './design/electic.webp',          desc: 'Bold mix of styles & eras'          },
+  { name: 'Transitional',       image: './design/transitional.webp',     desc: 'Classic meets contemporary'         },
+  { name: 'Art Deco',           image: './design/artdeco.webp',          desc: 'Glamour, geometry & gold'           },
+  { name: 'Hollywood Regency',  image: './design/HollywoodRegency.webp', desc: 'Opulent, dramatic luxury'           },
+  { name: 'Japandi',            image: './design/Japandi.webp',          desc: 'Japanese-Scandi minimalism'         },
+  { name: 'Maximalist',         image: './design/Maximalist.webp',       desc: 'More is more — bold & layered'      },
+  { name: 'Mediterranean',      image: './design/Meditarrarian.webp',    desc: 'Warm terracotta & relaxed luxury'   },
+  { name: 'Traditional',        image: './design/Traditional.webp',      desc: 'Timeless elegance & symmetry'       },
 ];
 
 const N = STYLES.length; // 13

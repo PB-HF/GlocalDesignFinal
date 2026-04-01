@@ -241,7 +241,7 @@ const HeroDesktopSection = () => {
         {/* Chair — decorative image next to title - Desktop only */}
         {!isTablet && (
           <img
-            src="/images/chair.png"
+            src="./images/chair.png"
             alt=""
             loading="lazy"
             onMouseEnter={e => {
@@ -305,7 +305,7 @@ const HeroDesktopSection = () => {
         {/* Table — decorative BG image (bottom-left) - Desktop only */}
         {!isTablet && (
           <img
-            src="/images/table.png"
+            src="./images/table.png"
             alt=""
             loading="lazy"
             onMouseEnter={e => {
@@ -336,7 +336,7 @@ const HeroDesktopSection = () => {
 
         {/* Sofa — decorative BG image */}
         <img
-          src="/images/sofa.png"
+          src="./images/sofa.png"
           alt=""
           loading="lazy"
           onMouseEnter={e => {

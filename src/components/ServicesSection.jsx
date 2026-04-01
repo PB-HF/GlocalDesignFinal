@@ -17,19 +17,19 @@ const SERVICES = [
     id: '01',
     title: 'Design\n Consultation',
     desc: 'Thoughtful direction to help you shape spaces that feel personal and intentional.',
-    image: '/images/service1.webp',
+    image: './images/service1.webp',
   },
   {
     id: '02',
     title: 'Luxury\n Projects',
     desc: 'Delivering high-value projects with careful planning, precision, and superior finishes.',
-    image: '/images/service2.webp',
+    image: './images/service2.webp',
   },
   {
     id: '03',
     title: 'Consultation\n + Execution',
     desc: 'End-to-end execution, from concept development to the final handover.',
-    image: '/images/service3.webp',
+    image: './images/service3.webp',
   },
 ];
 

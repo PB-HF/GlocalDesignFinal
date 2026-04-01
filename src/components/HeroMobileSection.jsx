@@ -70,7 +70,7 @@ const HeroMobileSection = () => {
         overflow: 'hidden',
       }}>
         <img
-          src="/images/sofa.png"
+          src="./images/sofa.png"
           alt="Luxury sofa"
           /* width/height avoid layout shift (CLS) */
           width={360}

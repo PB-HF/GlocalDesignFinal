@@ -12,8 +12,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 // ── Props default outside component ──
-const DEFAULT_BEFORE = '/images/Modern.webp';
-const DEFAULT_AFTER  = '/images/Modern 1.webp';
+const DEFAULT_BEFORE = './images/Modern.webp';
+const DEFAULT_AFTER  = './images/Modern 1.webp';
 
 const BeforeAfter = ({
   beforeImage = DEFAULT_BEFORE,
