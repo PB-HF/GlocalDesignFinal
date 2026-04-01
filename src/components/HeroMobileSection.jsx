@@ -57,34 +57,76 @@ const HeroMobileSection = () => {
         </h1>
       </div>
 
-      {/* ── Sofa image ── */}
+      {/* ── Furniture Images Scattered (Funky & Overlapping) ── */}
+      <style>
+        {`
+          @keyframes float1 {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+          }
+          @keyframes float2 {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(10px) rotate(-1.5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+          }
+          @keyframes float3 {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(-1deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+          }
+        `}
+      </style>
       <div style={{
         flex: 1,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
         width: '100%',
         position: 'relative',
         zIndex: 2,
         maxHeight: '42dvh',
-        overflow: 'hidden',
       }}>
-        <img
-          src="./images/sofa.png"
-          alt="Luxury sofa"
-          /* width/height avoid layout shift (CLS) */
-          width={360}
-          height={240}
-          style={{
-            width: '88%',
-            maxWidth: '360px',
-            height: 'auto',
-            objectFit: 'contain',
-            filter: 'drop-shadow(0 12px 28px rgba(0,0,0,0.12))',
-            /* GPU layer — smooth on low-end Android */
-            willChange: 'transform',
-          }}
-        />
+        <div style={{
+          position: 'relative',
+          width: '88%',
+          maxWidth: '360px',
+          height: '100%',
+          margin: '0 auto',
+        }}>
+          {[
+            { 
+              src: './images/glassbuble.png', 
+              alt: 'Glass bubble', 
+              style: { top: '5%', left: '0%', width: '45%', height: 'auto', zIndex: 1, animation: 'float1 6s ease-in-out infinite' } 
+            },
+            { 
+              src: './images/sofa.png', 
+              alt: 'Luxury sofa', 
+              style: { top: '15%', right: '5%', width: '65%', height: 'auto', zIndex: 2, animation: 'float2 7s ease-in-out infinite' } 
+            },
+            { 
+              src: './images/chair.png', 
+              alt: 'Designer chair', 
+              style: { bottom: '15%', left: '5%', width: '45%', height: 'auto', zIndex: 3, animation: 'float3 5s ease-in-out infinite' } 
+            },
+            { 
+              src: './images/table.png', 
+              alt: 'Coffee table', 
+              style: { bottom: '5%', right: '-5%', width: '45%', height: 'auto', zIndex: 4, animation: 'float1 8s ease-in-out infinite reverse' } 
+            },
+          ].map((item, index) => (
+            <img
+              key={index}
+              src={item.src}
+              alt={item.alt}
+              style={{
+                position: 'absolute',
+                objectFit: 'contain',
+                filter: 'drop-shadow(0 12px 24px rgba(0,0,0,0.15))',
+                willChange: 'transform',
+                ...item.style
+              }}
+            />
+          ))}
+        </div>
       </div>
 
       {/* ── Tagline ── */}
